@@ -1,38 +1,13 @@
-<<<<<<< HEAD
-﻿using System;
-
-namespace MyApplication
+public static double ObliczSrednia(int[] liczby)
 {
-    class Program
+    if (liczby == null || liczby.Length == 0)
+        return 0;
+    
+    double suma = 0;
+    foreach (int liczba in liczby)
     {
-        static void Main(string[] args)
-        {
-            int[] liczby = { 2, 4, 6, 8, 10 };
-            double srednia = ObliczSrednia(liczby);
-            Console.WriteLine("Średnia wynosi: " + srednia);
-        }
-
-        // Metoda obliczająca średnią
-        static double ObliczSrednia(int[] tablica)
-        {
-            if (tablica == null || tablica.Length == 0)
-            {
-                // Opcjonalnie możesz zwrócić 0 lub rzucić wyjątek
-                return 0;
-            }
-
-            double suma = 0;
-            foreach (int liczba in tablica)
-            {
-                suma += liczba;
-            }
-            return suma / tablica.Length;
-        }
+        suma += liczba;
     }
+    return suma / liczby.Length;
 }
-=======
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("drugi commit");
 
->>>>>>> parent of 6ee5933 (Trzeci commit)
