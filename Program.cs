@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace MyApplication
@@ -29,3 +30,9 @@ namespace MyApplication
         }
     }
 }
+=======
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+Console.WriteLine("drugi commit");
+
+>>>>>>> parent of 6ee5933 (Trzeci commit)
