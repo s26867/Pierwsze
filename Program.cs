@@ -1,13 +1,16 @@
-public static double ObliczSrednia(int[] liczby)
+public static int ObliczMax(int[] liczby)
 {
     if (liczby == null || liczby.Length == 0)
-        return 0;
+    {
+         throw new ArgumentException("Tablica nie może być pusta");
+    }
     
-    double suma = 0;
+    int max = liczby[0];
     foreach (int liczba in liczby)
     {
-        suma += liczba;
+         if (liczba > max)
+             max = liczba;
     }
-    return suma / liczby.Length;
+    return max;
 }
 
